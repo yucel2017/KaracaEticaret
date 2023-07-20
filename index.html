@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karaca E-TİCARET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">KARACA</h1>
+        <input type="text" placeholder="Ürün İsmi Giriniz...">
+
+        <div>
+            <button id="sepet-btn">Sepet</button>
+            <button>Kayıt ol</button>
+            <button>Giriş yap</button>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!--Kategoriler-->
+        <section id="category-sec">
+            <h1>KATEGORİLER</h1>
+            <div class="categories">
+            </div>
+        </section>
+
+        <!--Ürünler-->
+        <section id="product-sec">
+            <h1>Ürünler</h1>
+            <div class="products"></div>
+        </section>
+
+    </main>
+
+    <!--Modal Bölümü-->
+
+    <div class="modal-wrapper">
+        <div class="modal-inner">
+          <div class="icon">
+            <img id="close-btn" src="/images/close-ico.png" />
+          </div>
+          <!-- modalın liste alanı -->
+          <div class="list"></div>
+          <!-- sepetin toplam fiyatı -->
+          <p class="total-p">
+            Toplam
+            <span class="total-span">0</span>
+            $
+          </p>
+        </div>
+      </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
